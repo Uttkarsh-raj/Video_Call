@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "301444939924",
+    "project_id": "icall-cf245",
+    "storage_bucket": "icall-cf245.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301444939924:android:5595321027c6517cf43481",
+        "android_client_info": {
+          "package_name": "com.exampleproj.icall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301444939924-3f32371a9oov9bd4isg9j7791nct1sif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdINnfzHHrg92Wgmfcedw1DRAm8BN5bWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301444939924-3f32371a9oov9bd4isg9j7791nct1sif.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

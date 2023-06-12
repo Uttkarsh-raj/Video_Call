@@ -1,9 +1,13 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:icall/screens/home_screen.dart';
 import 'package:icall/screens/login_screen.dart';
 import 'package:icall/util/colors.dart';
 // import 'package:speech_to_text/speech_to_text.dart' as stt;
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -20,6 +24,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         '/Login': (context) => const LoginPage(),
+        '/home': (context) => const HomeScreen(),
       },
       home: const LoginPage(),
     );

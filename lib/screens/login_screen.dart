@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:icall/resources/auth_method.dart';
 import 'package:icall/widget/custom_button.dart';
 
 class LoginPage extends StatefulWidget {
@@ -9,6 +10,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  final AuthMethod _authMethods = AuthMethod();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +28,15 @@ class _LoginPageState extends State<LoginPage> {
             padding: const EdgeInsets.symmetric(vertical: 38.0),
             child: Image.asset('asset/images/onboarding.jpg'),
           ),
-          const CustomButtom(text: "Login"),
+          CustomButtom(
+            text: "Sign In",
+            onPressed: () async {
+              bool res = await _authMethods.signInWithGoogle(context);
+              if (res) {
+                Navigator.pushNamed(context, '/home');
+              }
+            },
+          ),
         ],
       ),
     );
