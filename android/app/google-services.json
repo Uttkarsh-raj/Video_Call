@@ -29,6 +29,13 @@
             {
               "client_id": "301444939924-3f32371a9oov9bd4isg9j7791nct1sif.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "301444939924-09uivp8uo51c01sbcu1nmstg8sti7pkp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.exampleproj.icall"
+              }
             }
           ]
         }

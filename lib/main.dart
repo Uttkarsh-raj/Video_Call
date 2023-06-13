@@ -6,8 +6,8 @@ import 'package:icall/util/colors.dart';
 // import 'package:speech_to_text/speech_to_text.dart' as stt;
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  // WidgetsFlutterBinding.ensureInitialized();
+  // await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
