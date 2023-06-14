@@ -10,7 +10,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  // final AuthMethod _authMethods = AuthMethod();
+  final AuthMethod _authMethods = AuthMethod();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,10 +31,10 @@ class _LoginPageState extends State<LoginPage> {
           CustomButtom(
             text: "Sign In",
             onPressed: () async {
-              // bool res = await _authMethods.signInWithGoogle(context);
-              // if (res) {
-              Navigator.pushNamed(context, '/home');
-              // }
+              bool res = await _authMethods.signInWithGoogle(context);
+              if (res) {
+                Navigator.pushNamed(context, '/home');
+              }
             },
           ),
         ],

@@ -6,8 +6,14 @@ import 'package:icall/util/colors.dart';
 // import 'package:speech_to_text/speech_to_text.dart' as stt;
 
 void main() async {
-  // WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp();
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+      options: const FirebaseOptions(
+    apiKey: 'AIzaSyBWXwkIMxdAFYIrby7DZhTIcu--3UiUR9g',
+    appId: '1:301444939924:android:5595321027c6517cf43481',
+    messagingSenderId: '301444939924',
+    projectId: 'icall-cf245',
+  ));
   runApp(const MyApp());
 }
 
